@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic JavaScript Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        #dynamic-text {
+            color: navy;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .box {
+            background-color: #f0f0f0;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        button {
+            padding: 8px 16px;
+            margin: 5px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        h3{
+            font-family: cursive;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JavaScript DOM Manipulation</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Dynamic Content Demo</h2>
+            <p id="dynamic-text">This text will change when you click the button below.</p>
+            <button id="change-text-btn">Change Text Content</button>
+        </section>
+
+        <section class="box">
+            <h3>Style Modification</h3>
+            <p id="style-target">This element's style will change when clicked.</p>
+            <button id="reset-style-btn">Reset Styles</button>
+        </section>
+
+        <section>
+            <h3>Element Toggle</h3>
+            <div id="toggle-container">
+                <p>This element can be removed and added back.</p>
+            </div>
+            <button id="toggle-element-btn">Remove Element</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 JavaScript Demo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
